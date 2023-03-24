@@ -1,0 +1,12 @@
+.next
+node_modules
+public
+.eslintrc
+.gitignore
+.prettierrc
+.stylelintrc
+README.md
+package.json
+package-lock.json
+tsconfig.json
+yarn.lock

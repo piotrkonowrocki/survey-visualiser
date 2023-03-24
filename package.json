@@ -1,0 +1,46 @@
+{
+  "name": "next-starter-template",
+  "version": "1.1.0",
+  "description": "A Next.js preconfigured starter template",
+  "homepage": "https://github.com/piotrkonowrocki/next-starter-template#readme",
+  "bugs": {
+    "url": "https://github.com/piotrkonowrocki/next-starter-template/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Konowrocki",
+    "url": "https://github.com/piotrkonowrocki/"
+  },
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.5",
+    "facepaint": "1.2.1",
+    "hex-rgb": "5.0.0",
+    "next": "13.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sanitize.css": "13.0.0"
+  },
+  "devDependencies": {
+    "@types/facepaint": "1.2.2",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "5.38.1",
+    "@typescript-eslint/parser": "5.38.1",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.4",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-simple-import-sort": "8.0.0",
+    "prettier": "2.7.1",
+    "sass": "1.55.0",
+    "typescript": "4.9.3"
+  }
+}
