@@ -1,11 +1,5 @@
 import React, {FC} from 'react'
 
-import {DemoHeader} from '@/components/ui/demo/demo'
-
-const Header: FC = () => (
-  <header>
-    <DemoHeader />
-  </header>
-)
+const Header: FC = () => <header></header>
 
 export default Header

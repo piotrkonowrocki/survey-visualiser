@@ -1,8 +1,7 @@
 import {CSSObject} from '@emotion/react'
 
+import {theme} from '@/styles/theme'
 import {rgba} from '@/utils/rgba'
-
-import {theme} from './theme'
 
 export const base: CSSObject = {
   '::selection': {
@@ -13,6 +12,7 @@ export const base: CSSObject = {
     height: '100%',
   },
   body: {
+    backgroundColor: theme.color.background,
     overflowX: 'hidden',
     overflowY: 'scroll',
     cursor: 'auto',

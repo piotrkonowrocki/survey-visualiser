@@ -1,5 +1,3 @@
-import facepaint from 'facepaint'
-
 /*
   Colors naming convetion:
 
@@ -25,10 +23,19 @@ import facepaint from 'facepaint'
   theme.colors.border: colors.greyPaleOyster
 */
 
+import {rgba} from '@/utils/rgba'
+
 const colors = {
   black: '#000',
   white: '#fff',
-  redCamelot: '#893456',
+  pinkAmaranth: '#e52b50',
+  violetWhiteLilac: '#eeebf7',
+  violetMarguerite: '#8069c9',
+  blueRevolver: '#2a2040',
+  blueAzure: '#315ba1',
+  blueHaze: '#d7d3e5',
+  greenFruidSalad: '#4f9d5d',
+  yellowLightning: '#fcc01e',
 }
 const base = 16
 
@@ -37,8 +44,17 @@ export const theme = {
   color: {
     black: colors.black,
     white: colors.white,
-    primary: colors.redCamelot,
+    primary: colors.violetMarguerite,
+    primaryFaded: colors.violetWhiteLilac,
+    background: colors.blueRevolver,
+    foreground: colors.white,
     text: colors.black,
+    cardBackground: colors.white,
+    cardText: colors.black,
+    chartGrid: colors.blueHaze,
+    chartCool: colors.blueAzure,
+    chartWarm: colors.pinkAmaranth,
+    chartGradient: [colors.pinkAmaranth, colors.blueAzure, colors.greenFruidSalad, colors.yellowLightning],
   },
   font: {
     size: {
@@ -48,9 +64,25 @@ export const theme = {
       sansSerif: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
     },
     spacing: {
-      base: 1.4,
+      base: 1.5,
     },
   },
+  size: {
+    container: 1224,
+  },
+  spacing: {
+    xxs: base * 0.125,
+    xs: base * 0.25,
+    s: base * 0.5,
+    base,
+    l: base * 1.5,
+    xl: base * 2,
+  },
+  shadow: {
+    card: `0 1px 3px ${rgba(colors.black, 0.25)}`,
+  },
+  radii: {
+    base: 8,
+    circle: '50%',
+  },
 }
-
-export const mediaQuery = facepaint(theme.breakpoints.map((breakpoint) => `@media (min-width: ${breakpoint}px)`))

@@ -1,11 +1,13 @@
 import {CSSObject} from '@emotion/react'
 
-import {theme} from './theme'
+import {theme} from '@/styles/theme'
 
 export const text: CSSObject = {
+  html: {
+    fontSize: theme.font.size.base,
+  },
   body: {
     color: theme.color.text,
-    fontSize: theme.font.size.base,
     fontFamily: theme.font.family.sansSerif,
     lineHeight: theme.font.spacing.base,
   },
@@ -13,6 +15,7 @@ export const text: CSSObject = {
     color: theme.color.primary,
     textDecoration: 'underline',
     cursor: 'pointer',
+    transition: '200ms color',
     '&:hover, &:active': {
       textDecoration: 'none',
     },
