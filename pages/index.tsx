@@ -10,7 +10,7 @@ import {theme} from '@/styles/theme'
 const Home: NextPage = () => {
   return (
     <MasterPage>
-      <Container>
+      <Container cs={{pb: theme.spacing.xl}}>
         <Text tag="h1" cs={{color: theme.color.white}}>
           📈 TD/DX survey visualiser
         </Text>

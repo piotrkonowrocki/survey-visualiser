@@ -1,1 +1,1 @@
-export const siteName = 'Next starter template'
+export const siteName = 'TD/DX survey visualiser'

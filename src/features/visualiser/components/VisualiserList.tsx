@@ -32,7 +32,7 @@ const VisualiserList: FC<VisualiserListProps> = ({answers, onSelect}) => {
   const gradient = tinygradient(...theme.color.chartGradient)
 
   return (
-    <Box>
+    <Box cs={{width: '100%'}}>
       <Text>📋 Survey items list:</Text>
       <Box tag="ul" composition="semanticList" cs={{display: 'flex', flexDirection: 'column', rowGap: theme.spacing.s}}>
         {Object.keys(answers).map((k, i) => (

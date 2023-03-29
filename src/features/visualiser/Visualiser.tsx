@@ -14,7 +14,7 @@ const Visualiser: FC = () => {
   return (
     <Box variant="card">
       <Grid template={[[12], null, null, [4, 8]]}>
-        <Box cs={{display: 'flex', flexDirection: 'column', rowGap: theme.spacing.l}}>
+        <Box cs={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', rowGap: theme.spacing.l}}>
           <VisualiserUploader
             onLoad={(_answers) => {
               setAnswers(_answers)
