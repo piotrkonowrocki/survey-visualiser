@@ -15,7 +15,7 @@ const getVisualiserDatasets = (data: any[]): VisualiserAnswers => {
   const gradient = tinygradient(...theme.color.chartGradient)
   const heatmap = tinygradient(theme.color.chartCool, theme.color.chartWarm)
 
-  data.forEach(({Username, ...row}) => {
+  data.forEach(({'Email address': email, ...row}) => {
     delete row.Timestamp
 
     Object.keys(row).forEach((k, j) => {
@@ -27,7 +27,7 @@ const getVisualiserDatasets = (data: any[]): VisualiserAnswers => {
       if (j % 2 === 0) {
         if (!(label in partialAnswers)) partialAnswers[label] = []
         partialAnswers[label].push({
-          label: Username as string,
+          label: email as string,
           pointRadius: 7,
           pointHoverRadius: 10,
           backgroundColor: rgba(color, 0.65),
